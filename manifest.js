@@ -1,0 +1,1 @@
+module.exports = { name: "Volume Control & Fake Deafen", description: "Control Discord volume and fake deafen", version: "1.0.0", author: "ryudrakeofficial-max", main: "./index.js" };
