@@ -1,7 +1,7 @@
 const { Plugin } = require('bunny');
 const { Native } = require('bunny');
 
-class VolumePlugin extends Plugin {
+module.exports = class VolumePlugin extends Plugin {
     onLoad() {
         this.registerCommand('vol', (args) => {
             const vol = parseInt(args[0]) || 50;
@@ -10,9 +10,11 @@ class VolumePlugin extends Plugin {
         });
         this.registerCommand('fakedeafen', () => {
             Native.toggleFakeDeafen();
-            return `Fake deafen toggled`;
+            return 'Fake deafen toggled';
         });
     }
-}
 
-module.exports = VolumePlugin;
+    onUnload() {
+        console.log('Plugin unloaded');
+    }
+};
