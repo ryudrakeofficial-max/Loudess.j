@@ -1,0 +1,1 @@
+{ "name": "loudess", "version": "1.0.0", "description": "Bunny plugin for Discord volume control and fake deafen", "main": "index.js", "author": "ryudrakeofficial-max", "license": "MIT", "keywords": ["bunny", "discord", "volume", "deafen", "plugin"] }
